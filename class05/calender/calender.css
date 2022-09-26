@@ -1,0 +1,21 @@
+.month{
+    height: 100px;
+    text-align: center;
+}
+.week{
+    width: 90px; height: 30px;
+    border: 1px solid black;
+}
+.num{
+    width: 90px; height: 60px;
+    border: 1px solid black;
+    text-align: right;
+}
+.day{
+    width: 90px; height: 30px;
+    border: 1px solid black;
+
+}
+.days{
+    text-align: center;
+}
