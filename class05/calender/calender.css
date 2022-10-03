@@ -1,21 +1,83 @@
+
 .month{
-    height: 100px;
+    height: 1000px;
+    width: 750px;
+    border: 1px solid black;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
 }
+#month{
+    width: 750px;
+    height: 100px;
+    border: 1px solid black;
+}
+.weeks{
+    margin-bottom: 20px;
+}
+.firstweek{
+    margin-bottom: 20px;
+    text-align: right;
+}
+.lastweek{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.days{
+    text-align: center;
+    position: relative;
+}
 .week{
-    width: 90px; height: 30px;
+    width: 100px; height: 30px;
     border: 1px solid black;
 }
 .num{
-    width: 90px; height: 60px;
+    width: 100px; height: 60px;
     border: 1px solid black;
     text-align: right;
 }
 .day{
-    width: 90px; height: 30px;
+    width: 100px; height: 30px;
     border: 1px solid black;
 
 }
-.days{
-    text-align: center;
+#sunday.week{
+    border: 1px solid red;
+    width: 100px; height: 30px;
+}
+#sunday.num{
+    width: 100px; height: 60px;
+    border: 1px solid red;
+    text-align: right;
+}
+#sunday.day{
+    width: 100px; height: 30px;
+    border: 1px solid red;
+}
+#holiday.week{
+    border: 1px solid red;
+    width: 100px; height: 30px;
+}
+#holiday.num{
+    width: 100px; height: 60px;
+    border: 1px solid red;
+    text-align: right;
+}
+#holiday.day{
+    width: 100px; height: 30px;
+    border: 1px solid red;
+}
+#saturday.week{
+    border: 1px solid blue;
+    width: 100px; height: 30px;
+}
+#saturday.num{
+    width: 100px; height: 60px;
+    border: 1px solid blue;
+    text-align: right;
+}
+#saturday.day{
+    width: 100px; height: 30px;
+    border: 1px solid blue;
 }
