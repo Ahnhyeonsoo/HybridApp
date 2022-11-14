@@ -1,0 +1,67 @@
+<!-- https://v3-docs.vuejs-korea.org/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component 실습</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <!-- vue프레임웍을 사용한 예시 -->
+    <div id="app">
+        <button @click="count++">위기</button>
+        <br>
+        <p>{{ count }}번의 기회</p>
+        
+    </div>
+
+    <div id="TestApp">
+        <button @click="count++">고백</button>
+        <br>
+        <p>{{ count }}분의 <b v-html="style"></b> </p>
+        
+    </div>
+    
+    <script>
+        
+        //람다식 함수
+        //var a = ()=>{
+        //}
+        //일반 함수
+        //function a()
+        //{
+        //}
+        const {createApp} = Vue;
+        //import {createApp} from Vue;(스크립트에 type="module")
+        //스킵버젼
+        createApp({
+            data() {
+                return {
+                    count : 0
+                }
+            },
+        mounted(){
+            console.log("App 마운트 성공");
+        },
+        }).mount("#app")
+        //기본형
+        const TestApp = createApp({
+            data() {
+                return {
+                    count : 1,
+                    style : "<span style='color : red'>1</span>"
+                }
+            },
+        });
+        TestApp.mount("#TestApp")
+
+        //createApp({
+        //    data()    {return { count : 0} },
+        //    mounted() {console.log("TestApp 마운트 성공"); },
+        //})
+    </script>
+</body>
+</html>
